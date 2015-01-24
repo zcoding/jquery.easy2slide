@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <title>移动端图片轮播插件</title>
+  <meta name="viewport" content="width=640, user-scalable=no">
+  <!--qq-->
+  <meta name="x5-fullscreen" content="true">
+  <meta name="x5-page-mode" content="app">
+  <!--uc-->
+  <meta name="full-screen" content="yes">
+  <meta name="browsermode" content="application">
+  <!--ms-->
+  <meta name="MobileOptimized" content="320">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="s-b_eee g-layout">
+
+    <div class="g-box">
+        <div class="g-pd20">
+            <div id="img-box" style="overflow:hidden;position:relative;width:600px;height:420px;margin:0 auto;">
+              <img src="img/01.jpg" alt="01">
+              <img src="img/02.jpg" alt="02">
+              <img src="img/03.jpg" alt="03">
+              <img src="img/04.jpg" alt="04">
+              <img src="img/05.jpg" alt="05">
+              
+              <div class="j-bullet-nav">
+                  <span class="j-bullet"></span>
+                  <span class="j-bullet"></span>
+                  <span class="j-bullet"></span>
+                  <span class="j-bullet"></span>
+                  <span class="j-bullet"></span>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!--g-box-->
+
+</div>
+<!--/底部-->
+<script src="../jquery/jquery-1.11.1.min.js"></script>
+<script src="coffee/jquery.touch2slide.js"></script>
+<script>
+    $(document).ready(function () {
+        slider = $('#img-box').touch2slide();
+        slider.autoplay();
+    });
+</script>
+</body>
+</html>
