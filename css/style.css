@@ -2,18 +2,3 @@ html, body, div {
   margin: 0;
   padding: 0;
 }
-
-.u-img {
-  display:block;
-  margin: 0;
-  padding: 0;
-  width:600px;
-  height:400px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background:#eeeeee no-repeat center center;
-  background-size:cover;
-  cursor: move;
-  -webkit-user-select: none;
-}

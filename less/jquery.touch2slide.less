@@ -1,0 +1,23 @@
+// 图片加载失败时显示的背景颜色
+@backgroundColor: #EEEEEE;
+
+// 不允许选中文本
+.no-user-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.u-img {
+  display:block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background:@backgroundColor no-repeat center center;
+  background-size:cover;
+  cursor: move;
+  .no-user-select;
+}
